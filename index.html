@@ -1,146 +1,189 @@
-<html><head><base href="https://github.com/emuplace/sudachi.emuplace.app/releases/download/v1.0.10/sudachi-windows-v1.0.10.7z">
+<html><head><base href="https://ecnonauta385.github.io/catalogostecnonautabaninet.cu/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Descargar Sudachi y The Legend of Zelda: Echoes of Wisdom</title>
+<title>TecnoNauta - Inicio</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f4f4f4;
-    }
-    h1, h2, h3 {
-        color: #2c3e50;
-    }
-    .download-btn {
-        display: inline-block;
-        background-color: #3498db;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin: 10px 0;
-        transition: background-color 0.3s;
-    }
-    .download-btn:hover {
-        background-color: #2980b9;
-    }
-    .download-icon {
-        margin-right: 10px;
-    }
-    #countdown {
-        font-size: 24px;
-        font-weight: bold;
-        color: #e74c3c;
-    }
-    .game-image {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+    background-color: #000;
+    color: #00FFFF;
+  }
+  .background {
+    background-image: url('https://i.ibb.co/JQxFVZC/wp14428876.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00FFFF;
+    text-decoration: none;
+    cursor: default;
+  }
+  nav a {
+    color: #00FFFF;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+  }
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #00FFFF;
+  }
+  .service-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  .service {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00FFFF;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .service:hover {
+    box-shadow: 0 0 15px #00FFFF;
+  }
+  .service h2 {
+    color: #00FFFF;
+    margin-bottom: 1rem;
+  }
+  .service-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  .service-content.active {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+  }
+  .cta-button {
+    background-color: #00FFFF;
+    color: #000;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .cta-button:hover {
+    background-color: #00CCCC;
+    transform: scale(1.05);
+  }
+  .whatsapp-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00FFFF;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
 </style>
+<script>
+  function toggleService(id) {
+    var content = document.getElementById(id);
+    content.classList.toggle('active');
+  }
+</script>
 </head>
 <body>
-    <h1>Sudachi - Emulador de Nintendo Switch y The Legend of Zelda: Echoes of Wisdom</h1>
-    
-    <p>Bienvenido a la página de descarga de Sudachi, un emulador de Nintendo Switch para dispositivos móviles y Windows, y The Legend of Zelda: Echoes of Wisdom. Aquí encontrarás todos los archivos necesarios para disfrutar de esta experiencia de juego en tu dispositivo.</p>
-
-    <h2>Descargas disponibles</h2>
-
-    <div>
-        <h3>1. APK de Sudachi para Android</h3>
-        <p>Descarga el archivo APK principal de Sudachi para dispositivos Android:</p>
-        <a href="https://www.mediafire.com/file/eqimbvufhr4px6b/app-mainline-release.apk/file" class="download-btn" data-url="https://www.mediafire.com/file/eqimbvufhr4px6b/app-mainline-release.apk/file">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Descargar APK Sudachi para Android
-        </a>
+  <div class="background">
+    <header>
+      <span class="logo">TecnoNauta</span>
+      <nav>
+        <a href="https://ecnonauta385.github.io/catalogostecnonautabaninet.cu/">Ver Catálogo</a>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Bienvenido a TecnoNauta</h1>
+      <div class="service-container">
+        <div class="service" onclick="toggleService('informaticos')">
+          <h2>Servicios Informáticos</h2>
+          <div id="informaticos" class="service-content">
+            <p>¡Bienvenidos a TecnoNauta!</p>
+            <p>¿Necesitas ayuda con tu dispositivo Android? ¡Estamos aquí para ayudarte! Ofrecemos los siguientes servicios:</p>
+            <ul>
+              <li>Eliminación de cuentas de Google (FRP)</li>
+              <li>Eliminación de bloqueos de pantalla en PC</li>
+              <li>Instalación de sistemas operativos</li>
+              <li>Instalación de antivirus y paquetes Office</li>
+            </ul>
+            <p>Y para iPhone:</p>
+            <ul>
+              <li>Creación de cuentas de iCloud</li>
+              <li>Configuración de VPN</li>
+            </ul>
+            <p>No realizamos trabajos de hardware, pero garantizamos servicios rápidos y eficientes para tus necesidades tecnológicas.</p>
+            <p>💳 Aceptamos pagos por transferencia y en efectivo.</p>
+            <p>¡Confía en TecnoNauta para resolver tus problemas tecnológicos con calidad y rapidez!</p>
+          </div>
+        </div>
+        <div class="service" onclick="toggleService('audiovisuales')">
+          <h2>Servicios de Grabaciones Audiovisuales</h2>
+          <div id="audiovisuales" class="service-content">
+            <p>En TecnoNauta, ofrecemos servicios de grabación de contenidos audiovisuales de alta calidad:</p>
+            <ul>
+              <li>Series</li>
+              <li>Novelas</li>
+              <li>Películas</li>
+              <li>Documentales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/+5356639178?text=Hola%20Necesito%20alguno%20de%20sus%20servicios" class="cta-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp logo" class="whatsapp-logo">
+        whasapp
+      </a>
     </div>
-
-    <div>
-        <h3>2. Sudachi para Windows</h3>
-        <p>Descarga Sudachi para sistemas Windows:</p>
-        <a href="https://github.com/emuplace/sudachi.emuplace.app/releases/download/v1.0.10/sudachi-windows-v1.0.10.7z" class="download-btn" data-url="https://github.com/emuplace/sudachi.emuplace.app/releases/download/v1.0.10/sudachi-windows-v1.0.10.7z">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Descargar Sudachi para Windows
-        </a>
-    </div>
-
-    <div>
-        <h3>3. Archivo de claves (ProdKeys)</h3>
-        <p>Descarga el archivo de claves necesario para el funcionamiento de Sudachi:</p>
-        <a href="https://www.mediafire.com/file/pl3c5v2dx3dsygg/ProdKeys-v18.0.0.zip/file" class="download-btn" data-url="https://www.mediafire.com/file/pl3c5v2dx3dsygg/ProdKeys-v18.0.0.zip/file">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Descargar ProdKeys
-        </a>
-    </div>
-
-    <div>
-        <h3>4. Save Data para Zelda: Echoes</h3>
-        <p>Descarga el save data para evitar el error de Zelda Echoes después de salir del Castillo:</p>
-        <a href="https://www.mediafire.com/file/9rfz2o8fn8fbf9a/0000000000000000.zip/file" class="download-btn" data-url="https://www.mediafire.com/file/9rfz2o8fn8fbf9a/0000000000000000.zip/file">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Descargar Save Data Zelda
-        </a>
-    </div>
-
-    <div>
-        <h3>Descargar Juego Zelda Echoes</h3>
-        <img src="https://i.ibb.co/rfmRBwq/Screenshot-20241006-102315-Instagram.jpg" alt="The Legend of Zelda: Echoes of Wisdom game cover for Nintendo Switch" class="game-image" width="600" height="400">
-        <p>Descarga el juego The Legend of Zelda: Echoes of Wisdom:</p>
-        <a href="https://file.switchrom.net/download/switch/the-legend-of-zelda-echoes-of-wisdom-nsp-rom/download/file-1" class="download-btn" data-url="https://file.switchrom.net/download/switch/the-legend-of-zelda-echoes-of-wisdom-nsp-rom/download/file-1">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Descargar Juego Zelda Echoes
-        </a>
-    </div>
-
-    <div id="countdown" style="display: none;"></div>
-
-    <script>
-    document.querySelectorAll('.download-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const url = this.getAttribute('data-url');
-            const countdownElement = document.getElementById('countdown');
-            countdownElement.style.display = 'block';
-            let secondsLeft = 5;
-
-            const countdownInterval = setInterval(() => {
-                countdownElement.textContent = `Descarga comenzará en ${secondsLeft} segundos...`;
-                secondsLeft--;
-
-                if (secondsLeft < 0) {
-                    clearInterval(countdownInterval);
-                    countdownElement.style.display = 'none';
-                    window.location.href = url;
-                }
-            }, 1000);
-        });
-    });
-    </script>
-</body>
-</html>
+    <footer>
+      <p>&copy; 2024 TecnoNauta. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+  </body></html>
